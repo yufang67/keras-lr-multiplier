@@ -12,7 +12,7 @@ EAGER_MODE = False
 
 if strtobool(os.environ.get('TF_KERAS', '0')):
     import tensorflow as tf
-    from tensorflow.python import keras
+    from tensorflow import keras
     TF_KERAS = True
     if strtobool(os.environ.get('TF_EAGER', '0')):
         try:
